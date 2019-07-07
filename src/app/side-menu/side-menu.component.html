@@ -1,0 +1,10 @@
+<aside class="sideMenu">
+    <ul>
+        <li *ngFor="let menuList of menuLists">
+                <!-- <span><a href=`{{menuList.url}}` target="_blank">{{menuList.name}}</a></span> -->
+                <span><a [href]=menuList.url_sanitaize target="_blank">{{menuList.menuName}}</a></span>
+        </li>
+        <!-- <li><a href="https://www.yahoo.co.jp/" target="_blank">リスト表示</a></li>
+        <li><a href="https://www.yahoo.co.jp/" target="_blank">アイデア作成</a></li> -->
+    </ul>
+</aside>

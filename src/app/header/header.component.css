@@ -1,0 +1,43 @@
+.page-header{
+    background-color: #F9C10B;
+    height: 60px;
+    /* line-height: 60px; */
+    position: relative;
+}
+.headerChild{
+    font-family: 'Meiryo';
+    color:#707070;
+    font-size:32px;
+    font-weight: bold;
+    position: absolute;
+    /* top:50%; */
+    /* margin-top: -16px; */
+    line-height: 60px;
+}
+.search{
+    font-family: 'Meiryo';
+    color:#707070;
+    font-size: 28px; 
+    font-weight: normal;
+    /* position: absolute;
+    top:50%;
+    width: 40px;
+    left:220px; */
+    /* margin-top: -1.0rem; */
+    margin-left: 30px;
+    line-height: 60px;
+}
+.searchText{
+    background: url('../searchTextImage.png') no-repeat 8px 8px;
+    padding: 0px 0px 0px 28px;
+    border: 0px;
+    height: 32px;
+    width: 400px;
+    background-color: #E9A42F;
+    position: absolute;
+    top:50%; 
+    /* top: -5px; */
+    margin-top: -14px;
+    margin-left: 20px;
+    /* line-height: 60px; */
+}

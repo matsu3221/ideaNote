@@ -1,0 +1,9 @@
+.sideMenu{
+    font-size: 15px;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    color: #033560;
+    background: #F3F3F3;
+    text-align: left;
+}
