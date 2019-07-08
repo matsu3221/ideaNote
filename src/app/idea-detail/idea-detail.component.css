@@ -1,0 +1,36 @@
+.detailBody{
+    width: 400px;
+    height: 500px;
+}
+label{
+    color:#707070;
+    font-family: 'meiryo';
+    font-size:16px;
+    font-weight: bold;
+}
+.addButton{
+    position:relative;
+    left: 275px;
+    width: 30px;
+    height: 30px;
+    border:0px;
+    padding: 0px;
+    background-color:#E4E4E4;
+    font-family: 'meiryo';
+    font-weight: bold;
+    font-size: 15px;
+    color:#707070;
+}
+.detailList{
+    font-family: 'meiryo';
+    font-weight: bold;
+    font-size: 15px;
+    color:#707070;
+}
+td{
+    border: solid 0.25px;
+    border-color: #707070;
+    padding: 1.0em;
+    background-color: white;
+    width: 375px;
+}

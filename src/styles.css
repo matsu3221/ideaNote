@@ -2,3 +2,24 @@
     margin:0;
     padding:0;
 }
+.mainBoard{
+    position: relative;
+    top:0px;
+    left:200px;
+    background-color: #E4E4E4;
+}
+.page-header{
+    background-color: #F9C10B;
+    height: 60px;
+    /* line-height: 60px; */
+    position: fixed;
+    width: 100%;
+}
+.title{
+    position: relative;
+    top:10px;
+    left:30px;
+    text-align:left;
+    font-family: 'Meiryo';
+    color:#707070;
+}

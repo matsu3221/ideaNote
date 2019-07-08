@@ -1,0 +1,12 @@
+<div class="detailBody">
+    <label>ディテール：</label>
+    <input class='addButton' type="button" value="+" (click)="onClick()"/>
+    <div class="detailList" *ngIf="detailList">
+        <table></table>
+        <tr *ngFor="let detail of detailList">
+            <td>
+                {{detail}}
+            </td>
+        </tr>
+    </div>
+</div>
