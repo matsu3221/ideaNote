@@ -6,4 +6,5 @@ export class menu{
     menuName:string;
     url_sanitaize:SafeHtml;
     url_string:string;
+    route:string;
 }

@@ -1,0 +1,33 @@
+ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+label{
+    margin-right: 10px;
+    width: 150px;
+    font-family: 'meiryo';
+    font-size:16px;
+    font-weight: bold;
+    color:#707070;
+    float: left;
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-width: 0px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'meiryo';
+    font-size:12px;
+    /* font-weight: bold; */
+    color:#707070;
+}
+.detailText{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.addButton{
+    width: 60px;
+    height: 30px;
+    border:0px;
+    padding: 0px;
+}
