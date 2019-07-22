@@ -1,11 +1,12 @@
 <div class="detailBody">
     <label>ディテール：</label>
-    <input class='addButton' type="button" value="+" (click)="onClick()"/>
-    <div class="detailList" *ngIf="detailList">
+    <!-- <input class='addButton' type="button" value="+" (click)="onClick()"/> -->
+    <a routerLink='/addDetail' class="btn btn-warning btn-lg">+</a>
+    <div class="detailList" *ngIf="detailService.detailList">
         <table></table>
-        <tr *ngFor="let detail of detailList">
+        <tr *ngFor="let detail of detailService.detailList">
             <td>
-                {{detail}}
+                {{detail.title}}
             </td>
         </tr>
     </div>

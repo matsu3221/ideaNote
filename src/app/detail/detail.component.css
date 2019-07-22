@@ -31,3 +31,11 @@ input{
     border:0px;
     padding: 0px;
 }
+.btn{
+    height: 30px;
+    width: 60px;
+    font-size: 16px;
+    font-family: 'Meiryo';
+    padding:0px 0px 0px 0px;
+    color: #707070;
+}

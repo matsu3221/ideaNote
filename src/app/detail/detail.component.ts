@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { detail } from '../detail';
+import { DetailService } from '../detail.service';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  detail = new detail();
+  
+  constructor(private detailService:DetailService) { }
 
   ngOnInit() {
   }
 
+  onClick(detail:detail){
+    console.log(detail);
+    this.detailService.addDetailList(detail);
+  }
 }

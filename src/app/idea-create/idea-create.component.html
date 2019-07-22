@@ -2,10 +2,25 @@
     <div>
         <h2 class='title'>アイデア作成</h2>
         <label class='titleTextBox'>タイトル：
-            <input class="textBox" type="text" placeholder="タイトルを入力してください"/>
+            <!-- <input class="textBox" type="text" class="form-control" placeholder="タイトルを入力してください"/> -->
+            <input type="text" class="form-control" placeholder="タイトルを入力してください" [(ngModel)]="title"/>
         </label>
     </div>
     <div class='detail'>
         <app-idea-detail></app-idea-detail>
+    </div>
+    <div class="ideaImageTitle">
+            <label>画像：
+                <label class="btn btn-outline-warning pluxButton" >+<input type="file" accept="image/png,image/jpg" (change)="imageChange($event)" hidden/>
+                </label>
+            </label>
+            <div class="ideaImage">
+                <!-- <img src={{dispFile}} class="rounded mx-auto d-block" alt="..."> -->
+                <img src={{ideaImageService.dispFile}}  alt="..." class="img-thumbnail">
+            <!-- <img src="./noimage.png" class="rounded float-right ideaImage" alt="..."> -->
+            </div>
+    </div>
+    <div class="saveButton">
+            <a  id="ideaDownload" routerLink="/displayList" download="myIdea.json" type="button" class="btn btn-warning saveButton" (click)="saveIdea()">保存</a>
     </div>
 </div>

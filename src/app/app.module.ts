@@ -10,6 +10,9 @@ import { IdeaDetailComponent } from './idea-detail/idea-detail.component';
 import { DetailModalComponent } from './detail-modal/detail-modal.component';
 import { SimpleModalComponent } from 'ngx-simple-modal';
 import { DetailComponent } from './detail/detail.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { DisplayListComponent } from './display-list/display-list.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,14 @@ import { DetailComponent } from './detail/detail.component';
     IdeaCreateComponent,
     IdeaDetailComponent,
     DetailModalComponent,
-    DetailComponent
+    DetailComponent,
+    DisplayListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

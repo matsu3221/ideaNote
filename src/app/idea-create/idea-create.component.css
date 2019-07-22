@@ -27,3 +27,52 @@
     top:60px;
     left:30px;
 }
+.form-control{
+    width: 350px;
+}
+.ideaImageTitle{
+    position: absolute;
+    top:80px;
+    left:500px;
+    padding: 0px 0px 0px 0px;
+    font-family: 'meiryo';
+    font-size:16px;
+    font-weight: bold;
+    color:#707070;
+}
+.ideaImage{
+    position: relative;
+    width: 30px;
+    height: 300px;
+}
+.pluxButton{
+    position: relative;
+    top:-2px;
+    left:380px;
+    border: 0px;
+    color:#707070;
+    font-weight: bold;
+    font-size: 24px;
+    width: 50px;
+}
+.saveButton{
+    position: relative;
+    /* top:30px; */
+    left: 470px;
+}
+.btn{
+    font-size: 16px;
+    height: 30px;
+    width: 60px;
+    padding: 0px 0px 0px 0px;
+}
+.ideaImage{
+    width: 500px;
+    height: 500px;
+    /* border: "1"; */
+    /* background-color: #E4E4E4; */
+    background-color:#E4E4E4;
+}
+.img-thumbnail{
+    background-color:#E4E4E4;
+}

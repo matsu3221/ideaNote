@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DetailModalComponent } from '../detail-modal/detail-modal.component';
+import { DetailService } from '../detail.service';
+import { detail } from '../detail';
 
 @Component({
   selector: 'app-idea-detail',
@@ -8,17 +10,9 @@ import { DetailModalComponent } from '../detail-modal/detail-modal.component';
 })
 export class IdeaDetailComponent implements OnInit {
 
-  constructor() { }
-
-  detailList:string[]=[
-    "データを取得できる",
-    "データを登録できる",
-  ];
+  constructor(private detailService:DetailService) { }
 
   ngOnInit() {
   }
-
-  onClick(){
-
-  }
+  
 }
