@@ -1,4 +1,18 @@
 <div class="mainBoard">
     <h2 class="title">アプリアイデアリスト</h2>
-    <p>display-list works!</p>
+    <table class="table table-striped">
+            <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>日付</th>
+                        <th>何？</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor='let idea of ideaListService.ideaList'>
+                    <tr>
+                        <!-- <th>{{idea.date}}</th>
+                        <td>{{idea.title}}</td> -->
+                    </tr>
+                </tbody>
+    </table>
 </div>

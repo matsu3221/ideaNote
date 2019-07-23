@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IdeaListService } from '../idea-list.service';
 
 @Component({
   selector: 'app-display-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ideaListService: IdeaListService) { }
 
   ngOnInit() {
+    console.log(this.ideaListService.ideaList);
   }
 
 }
