@@ -1,5 +1,5 @@
 <aside class="sideMenu">
-    <ul>
+    <ul id='menuRow'>
         <li *ngFor="let menuList of menuLists">
                 <!-- <span><a href=`{{menuList.url}}` target="_blank">{{menuList.name}}</a></span> -->
                 <span><a [routerLink]=menuList.route>{{menuList.menuName}}</a></span>

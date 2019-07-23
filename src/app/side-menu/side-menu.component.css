@@ -9,3 +9,8 @@
     text-align: left;
     font-family: 'Meiryo';
 }
+ul#menuRow li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:18px;
+}

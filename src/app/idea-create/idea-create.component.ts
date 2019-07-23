@@ -30,6 +30,15 @@ export class IdeaCreateComponent implements OnInit {
     // if(this.title === ""){
     //   this.title ="notitle";
     // }
-    this.jsonCreate.saveIdea(this.title,this.detailService.detailList,this.ideaImageService.dispFile);
+    var blob = this.jsonCreate.saveIdea(this.title,this.detailService.detailList,this.ideaImageService.dispFile);
+    // Aタグのhref属性にBlobオブジェクトを設定する。
+    let link = document.createElement('a')
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "ideaFile.json";
+    console.log("downloadは");
+    link.dataset.downloadurl = ["text/plain", link.download, link.href].join(":");
+    // console.log(window.URL);
+    console.log(link);
+    link.click();
   }
 }
